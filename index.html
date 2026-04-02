@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Site</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f6fa;
+      color: #111;
+    }
+
+    header {
+      background: #52250d;
+      color: white;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      transition: opacity 0.2s;
+    }
+
+    .menu a:hover {
+      opacity: 0.7;
+    }
+
+    .banner img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+    }
+
+    /* Container do primeiro texto de boas vindas ao meu site */
+    .hero {
+      padding: 65px 20px;
+      background: linear-gradient(135deg, #371412, #e96005);
+      color: white;
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .hero h1 {
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 30px;
+      margin: 50px 0;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      flex: 1;
+      min-width: 220px;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card p {
+      padding: 12px;
+      font-weight: bold;
+    }
+
+    /* Parte da estética do vídeo do youtube. */
+    .media {
+      background: rgb(255, 255, 255);
+      padding: 25px;
+      border-radius: 12px;
+      margin: 50px 0;
+      box-shadow: 0 4px 12px rgba(246, 129, 129, 0.08);
+    }
+
+    .media h2 {
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 320px;
+      border: none;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    .media-section {
+      margin-bottom: 40px;
+    }
+
+    .explicacao {
+    margin: 30px 0;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    }
+
+    .explicacao p {
+    margin-bottom: 15px;
+    }
+    /* Css do rodapé */
+    footer {
+      background: #52250d;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .cards {
+        flex-direction: column;
+      }
+
+      iframe {
+        height: 220px;
+      }
+
+      .hero {
+        padding: 50px 15px;
+      }
+
+      .hero h1 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="nav">
+      <h2>Raízes da Bahia</h2>
+      <div class="menu">
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="banner">
+    <img src="imagens/banner.jpg" alt="Banner">
+  </div>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Bem-vindos ao Raízes da Bahia</h1>
+      <p>
+        Este site foi desenvolvido com o objetivo de apresentar e valorizar a cultura do estado da Bahia. 
+        A proposta é mostrar a diversidade cultural da Bahia, permitindo que o usuário conheça tradições, sabores e expressões artísticas do estado.
+      </p>
+    </div>
+  </section>
+
+  <div class="container">
+
+    <section class="cards">
+      <div class="card">
+        <img src="imagens/lugares.jpg" alt="">
+        <p>Lugares Históricos</p>
+      </div>
+
+      <div class="card">
+        <img src="imagens/culinária.jpg" alt="">
+        <p>Culinária Baiana</p>
+      </div>
+
+      <div class="card">
+        <img src="imagens/arte.jpg" alt="">
+        <p>Artesanato e Arte</p>
+      </div>
+    </section>
+
+    <!-- TEXTO DE EXPLICAÇÃO -->
+    
+  <div style="text-align: justify; line-height: 1.6; margin: 30px 0;">
+    <p>
+      A <a href="https://historia-do-brasil.quora.com/Hist%C3%B3ria-A-Bahia-%C3%A9-o-mais-antigo-estado-brasileiro-e-hoje-o-mais-populoso-da-regi%C3%A3o-Nordeste-A-coloniza%C3%A7%C3%A3o-na-regi%C3%A3o" target="_blank">Bahia</a> é muito mais do que um estado do Nordeste — é um dos berços da história do Brasil. 
+      Foi aqui que os portugueses chegaram em 1500, e Salvador, sua capital, se tornou a primeira capital do país. 
+      Hoje, com milhões de habitantes, a Bahia continua sendo um dos estados mais importantes e marcantes do Brasil.
+    </p>
+
+    <p>
+      Mas não é só a história que chama atenção. A Bahia é um lugar cheio de vida, com praias, cidades históricas e regiões como a Chapada Diamantina, que encantam qualquer pessoa. 
+      O clima quente, o litoral e a diversidade de paisagens fazem do estado um dos destinos mais visitados do país.
+    </p>
+
+    <p>
+      A cultura baiana é única e muito forte. Está presente na música, nas festas, na religiosidade e no jeito acolhedor do povo. 
+      O Carnaval de Salvador, por exemplo, é um dos maiores do mundo, e pratos como acarajé, vatapá e moqueca mostram toda a riqueza da culinária local.
+    </p>
+
+    <p>
+      Este site foi criado justamente para destacar tudo isso de forma simples e acessível. 
+      A ideia é apresentar lugares históricos, sabores e formas de arte que fazem parte do dia a dia da Bahia e ajudam a construir a identidade do estado.
+    </p>
+
+    <p>
+      Mais do que trazer informações, a proposta é despertar o interesse e o encanto por esse lugar tão diverso, cheio de história e cultura em cada detalhe.
+    </p>
+  </div>
+  
+
+    <!-- VÍDEO -->
+    <section class="media media-section">
+      <h2>Vídeo</h2>
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© 2026 - Meu Site</p>
+  </footer>
+
+</body>
+</html>
